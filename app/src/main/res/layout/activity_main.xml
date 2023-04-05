@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colori"
+    >
+
+   <androidx.appcompat.widget.AppCompatButton
+       android:id="@+id/signupbutton"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginHorizontal="40dp"
+       android:layout_marginBottom="20dp"
+       android:background="@drawable/button_background"
+       android:text="Sign Up"
+       android:textAllCaps="false"
+       android:textColor="@color/white"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+
+       app:layout_constraintStart_toStartOf="parent" />
+
+   <androidx.appcompat.widget.AppCompatButton
+       android:id="@+id/LogInButton"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginHorizontal="40dp"
+       android:text="Log In"
+       android:textAllCaps="false"
+       app:layout_constraintBottom_toTopOf="@id/signupbutton"
+       app:layout_constraintStart_toStartOf="@id/signupbutton"
+       app:layout_constraintEnd_toEndOf="@id/signupbutton"
+       android:backgroundTint="@color/white"
+       android:layout_marginBottom="20dp"
+       android:background="@drawable/button_background"
+       android:textColor="@color/colori"
+
+       />
+
+   <TextView
+       android:id="@+id/textView"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginBottom="30dp"
+       android:text="We Deliver WaterWe Deliver Water\nWe Deliver Water"
+       android:textColor="@color/white"
+       android:textSize="19sp"
+       app:layout_constraintBottom_toTopOf="@+id/LogInButton"
+       app:layout_constraintStart_toStartOf="@+id/LogInButton" />
+
+   <TextView
+       android:layout_width="232dp"
+       android:layout_height="40dp"
+       android:text="Water Delivery"
+       android:textColor="@color/white"
+       android:textSize="30sp"
+       android:layout_marginBottom="20dp"
+       app:layout_constraintBottom_toTopOf="@+id/textView"
+       app:layout_constraintStart_toStartOf="@+id/textView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
